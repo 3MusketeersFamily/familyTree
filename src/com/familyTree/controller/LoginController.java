@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
   
   
 @Controller  
-@RequestMapping("/user")  
+@RequestMapping("user")  
 public class LoginController {  
       
-    @RequestMapping("/index")  
+    @RequestMapping("index")  
     public String toIndex(HttpServletRequest request,Model model){  
         return "index";  
     }
