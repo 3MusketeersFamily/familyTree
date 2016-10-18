@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-士大夫的 
+<a href="user/getUser.do?id=1">点我</a>
 </body>
 </html>

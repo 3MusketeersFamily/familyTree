@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.familyTree.dao.UserDao" >
+  <resultMap id="BaseResultMap" type="com.familyTree.entity.User" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+  </resultMap>
+  <select id="getUser" parameterType="java.lang.Integer" resultType="com.familyTree.entity.User">
+  	select * from user where id = #{id,jdbcType=INTEGER} 
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from user
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.familyTree.entity.User" >
+    insert into user (id)
+    values (#{id,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.familyTree.entity.User" >
+    insert into user
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+</mapper>
