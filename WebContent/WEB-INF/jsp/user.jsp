@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div>id:${user.id}</div>
-
-<div>name:${user.name}</div>
+	<div>id:${user.id}</div>
+	
+	<div>name:${user.name}</div>
 </body>
 </html>

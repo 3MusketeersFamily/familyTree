@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="debug">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout charset="GBK" pattern="%-d{yyyy-MM-dd HH:mm:ss} [%c]-[%p] %m%n"/>
+        </Console>
+        <RollingFile name="RollingFile" fileName="/Users/terry/logs/familyTree.log"
+                     filePattern="/Users/terry/logs/$${date:yyyyMMdd}/famalyTree.log.%d{yyyyMMddHHmmss}">
+            <PatternLayout charset="GBK" pattern="%-d{yyyy-MM-dd HH:mm:ss} [%c]-[%p] %m%n"/>
+            <SizeBasedTriggeringPolicy size="1 MB"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </Root>
+    </Loggers>
+</Configuration>
