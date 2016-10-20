@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="user/getUser.do?id=1">点我</a>
+<a href="user/getUser.do?id=1">点我1</a>
+<a href="user/getUser.do?id=2">点我2</a>
 </body>
 </html>
