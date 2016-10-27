@@ -24,7 +24,7 @@ public class LoginController {
     @RequestMapping("index")  
     public String toIndex(HttpServletRequest request,Model model){
     	logger.info("进入首页！");
-        return "index";  
+        return "index"; 
     }
     
     @RequestMapping("getUser")  
