@@ -24,7 +24,6 @@ public class LoginController {
     @RequestMapping("index")  
     public String toIndex(HttpServletRequest request,Model model){
     	logger.info("进入首页！");
-    	
         return "index";  
     }
     
@@ -34,5 +33,11 @@ public class LoginController {
     	User user = userService.getUser(id);
     	model.addAttribute("user", user);
     	return "user";  
+    }
+    
+    @RequestMapping("searchFamily")  
+    public String searchFamily(){
+    	logger.info("搜索家族！");
+    	return "searchFamily";  
     }
 }
