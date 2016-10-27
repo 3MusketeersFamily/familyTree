@@ -18,6 +18,7 @@ public class Family {
 	public List<Map<String, Object>> tbl_person = new ArrayList<Map<String, Object>> ();
 	public List<Map<String, Object>> tbl_family_tree = new ArrayList<Map<String, Object>> ();
 	public List<Map<String, Object>> tbl_tree_node = new ArrayList<Map<String, Object>> ();
+	
 	/**
 	 * 数据初始化，作为数据表
 	 */
