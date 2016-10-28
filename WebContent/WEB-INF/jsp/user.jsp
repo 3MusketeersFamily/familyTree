@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div>id:${user.id}</div>
-测试eclipse提交	      
+测试eclipse提交	        
 	<div>name:${user.name}</div>
 </body>
 </html>
