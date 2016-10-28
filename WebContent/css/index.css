@@ -90,6 +90,7 @@
 	height:150px;
 }
 .searchResult_ul li div p{
+	margin-bottom: 0px;
 	display:block;
 	color: #333333;
 	font-size:13px;
