@@ -36,13 +36,11 @@
 <div class="header">
     <div class="header_left">
     	<div class="leftMenu">
-            <ul class="leftMenu_btn">
-                <li></li><li></li><li></li>
-            </ul>
-            <div class="leftMenu_name">功能菜单</div>
+    		<img class="leftMenu_logo" src="<%=path%>/images/logo.png"/>
+    		<span class="header_title">传家簿</span>
     	</div>
     </div>
-    <div style="float:left;width:60%;" class="header_title">传家簿</div>
+    <div style="float:left;width:60%;" class="header_title"></div>
     <div style="float:left;width:20%;" class="clearfix">
         <nav class="navbar-userbar f-r hidden-xs hidden-sm mt-10"> 
             <a href="javascript:void(0);" class="btn btn-primary radius">登录</a>
@@ -74,17 +72,11 @@
 			<a href="#" target="_blank">免责条款</a>
 			<span class="pipe">|</span>
 			<a href="#" target="_blank">联系我们</a>
+			<span class="pipe">|</span>
+			<a href="#" target="_blank">用户建议</a>
 		</nav>
 		<p>Copyright ©2016-2016 www.chuanjiabu.com All Rights Reserved.
 	</div>
 </footer>
-<div id="login" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-header">
-<h3 id="myModalLabel">对话框标题</h3><a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
-</div>
-<div class="modal-body">
-<p>对话框内容…</p>
-</div>
-</div>
 </body>
 </html>

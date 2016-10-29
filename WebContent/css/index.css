@@ -4,7 +4,7 @@
 	right:0;
 	left:0;
 	top:0;
-	height: 50px;
+	height: 60px;
 	width: 100%;
 	font-family: Arial, 微軟正黑體;
 	background: #2E81C3;
@@ -15,35 +15,41 @@
 }
 .leftMenu{
 	padding-left: 20px;
-    padding-top: 14px;
 	width:200px;
 	float:left;
 }
-.leftMenu_btn{
+/* .leftMenu_btn{
 	width:35px;
 	float:left;
-}
-.leftMenu_btn li{
+} */
+/* .leftMenu_btn li{
 	width: 30px;
     height: 5px;
 	background:#FFFFFF;
 	margin-bottom:3px;
 	border-radius:2px;
-}
-.leftMenu_name{
+} */
+/* .leftMenu_name{
 	float:left;
     color: #FFFFFF;
     font-size: 14px;
     font-weight: bold;
-}
+} */
 .header_title {
-	width:100px;
+	float: left;
+	width:80px;
 	margin:auto;
-	line-height: 50px;
+	line-height: 60px;
 	font-weight: bold;
 	font-size: 23px;
 	text-align: center;
 	color: rgb(255,255,255);
+}
+
+.leftMenu_logo{
+	float: left;
+	width: 65px;
+    height: 55px;
 }
 
 .search {
