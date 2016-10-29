@@ -78,5 +78,13 @@
 		<p>Copyright ©2016-2016 www.chuanjiabu.com All Rights Reserved.
 	</div>
 </footer>
+<div id="login" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<h3 id="myModalLabel">对话框标题</h3><a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+</div>
+<div class="modal-body">
+<p>对话框内容…</p>
+</div>
+</div>
 </body>
 </html>

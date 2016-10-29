@@ -2,6 +2,7 @@ $(function(){
 	_bindSlider();
 	
 	_bindSearch();
+	_bindLogin();
 });
 
 /**轮播图**/
@@ -21,4 +22,11 @@ function _bindSearch(){
 	$("#search_button").click(function(){
 		window.location.href="searResult.html";
 	});
+}
+/**登陆按钮**/
+function _bindLogin(){
+	$('#login').on('hidden.bs.modal', function (e) {
+		// 处理代码...
+	});
+	//$("#mymodal").modal("show");
 }
