@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!doctype html>
 <html>
 <head>
@@ -23,9 +24,10 @@
 		String path = request.getContextPath();
 		String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 	%>
-	<link href="<%=basePath%>css/index.css" rel="stylesheet" type="text/css">
-	<link href="<%=basePath%>lib/bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css">
 	<link href="<%=basePath%>lib/h-ui/css/H-ui.min.css" rel="stylesheet" type="text/css">
+	<link href="<%=basePath%>lib/bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css">
+	<link href="<%=basePath%>css/common/common.css" rel="stylesheet" type="text/css">
+	
 	<script src="<%=basePath%>lib/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 	<script src="<%=basePath%>lib/bxslider/jquery.bxslider.min.js" type="text/javascript"></script>
 	<script src="<%=basePath%>js/index.js" type="text/javascript"></script>
@@ -36,16 +38,18 @@
 <div class="header">
     <div class="header_left">
     	<div class="leftMenu">
-    		<img class="leftMenu_logo" src="<%=path%>/images/logo.png"/>
+    		<img class="leftMenu_logo" src="<%=path%>/images/common/logo.png"/>
     		<span class="header_title">传家簿</span>
     	</div>
     </div>
-    <div style="float:left;width:60%;" class="header_title"></div>
-    <div style="float:left;width:20%;" class="clearfix">
-        <nav class="navbar-userbar f-r hidden-xs hidden-sm mt-10"> 
-            <a href="javascript:void(0);" class="btn btn-primary radius">登录</a>
-            <a href="javascript:void(0);" class="btn btn-success radius">注册</a>
-        </nav>
+    <div class="header_right clearfix">
+    	<div class="header_menu">
+    		<span><a href="<%=path%>/index/index.do" style="color:#0395F4;">首页</a></span>
+    		<span><a>乐家</a></span>
+    		<span><a href="<%=path%>/familyHall/searchFamily.do">家族堂</a></span>
+    		<span><a>创建家谱</a></span>
+    		<span><a href="<%=path%>/user/getBaseInfo.do">登录|注册</a></span>
+    	</div>
     </div>
 </div>
 <!--标题栏 end-->
@@ -64,19 +68,8 @@
 </div>
 <!--轮播图 end-->
 
-<footer class="footer" style="border:0;margin-top:80px;">
-	<div class="container-fluid">
-		<nav>
-			<a href="#" target="_blank">关于我们</a>
-			<span class="pipe">|</span>
-			<a href="#" target="_blank">免责条款</a>
-			<span class="pipe">|</span>
-			<a href="#" target="_blank">联系我们</a>
-			<span class="pipe">|</span>
-			<a href="#" target="_blank">用户建议</a>
-		</nav>
-		<p>Copyright ©2016-2016 www.chuanjiabu.com All Rights Reserved.
-	</div>
-</footer>
+<!--版权信息 begin-->
+<c:import url="common/copyright.jsp" />
+<!--版权信息 end-->
 </body>
 </html>

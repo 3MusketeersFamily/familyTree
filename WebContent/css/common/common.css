@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* CSS Document */
+.header {
+	right:0;
+	left:0;
+	top:0;
+	height: 70px;
+	width: 100%;
+	font-family: 'microsoft yahei',"\5B8B\4F53",sans-serif;;
+	background: #FFF;
+}
+.header_left{
+	float:left;
+	width:18%;
+}
+.leftMenu{
+	padding-left: 20px;
+	width:200px;
+	float:left;
+}
+.header_title {
+	float: left;
+	width:80px;
+	margin:auto;
+	font-weight: bold;
+	line-height: 70px;
+	font-size: 21px;
+	text-align: center;
+	color: #2E81C3;
+}
+
+.leftMenu_logo{
+	float: left;
+    width: 73px;
+    height: 65px;
+}
+
+.header_right{
+	float:left;
+	width:80%;
+}
+
+.header_menu{
+	float:right;
+	margin-top: 23px;
+}
+
+.header_menu span{
+	float: left;
+    margin-right:50px;
+}
+
+.header_menu a{
+	font-weight: 500;
+    line-height:20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.header_menu a:hover{
+	text-decoration:none;
+}
+
