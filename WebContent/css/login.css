@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* CSS Document */
+.login-bg{
+	width:100%;
+	height:400px;
+	background: url(../images/login_bg.png) no-repeat top left;
+	background-size:100% 100%;
+}
+
+.login-box-warp {
+	float: right;
+    top: 45px;
+    right:100px;
+    position: relative;
+    z-index: 4;
+    background: #fff;
+    overflow: visible;
+    width: 346px;
+    height:290px;
+}
+
+.login-tab{
+	height:30px;
+	padding:10px 0px 10px 30px;
+	font-size:20px;
+	color:#555;
+	font-family: "microsoft yahei";
+	text-align:left;
+	border-bottom:1px solid #ddd;
+}
+
+.login-line{
+	margin-left: 30px;
+    margin-top: 10px;
+}
+
+.login-label{
+	width: 65px;
+    display: inline-block;
+    text-align: left;
+}
+
+.w-220{
+	width: 220px;
+}
+
+.w-140{
+	width: 140px;
+}
+
+.login_randCode{
+	width:70px;
+	height:31px;
+	font-size:14px;
+	line-height:31px;
+	display:inline-block;
+	background:#ACC2CC;
+	vertical-align: middle;
+	text-align:center;
+}
+
+.login-link{
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    font-size: 13px;
+    color: #666;
+}
+
+.mar-right-50{
+	margin-right:50px;
+}
+
+.login-sub{
+	width: 285px;
+    height: 40px;
+    margin-top: 18px;
+    background: #6DBEE2;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    line-height: 40px;
+    font-family: "microsoft yahei";
+}
+
