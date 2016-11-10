@@ -45,12 +45,24 @@
 	margin-top: 23px;
 }
 
-.header_menu span{
+.header_menu_item{
 	float: left;
-    margin-right:50px;
 }
 
-.header_menu a{
+.header_menu_item_br{
+	border-right: 1px solid #ddd;
+}
+
+.header_menu_item_login{
+    padding: 0px 15px !important;
+}
+
+.header_menu_item_signup{
+    padding-left: 10px !important;
+}
+
+.header_menu_link{
+	padding:0px 25px;
 	font-weight: 500;
     line-height:20px;
     font-size: 20px;
@@ -61,3 +73,10 @@
 	text-decoration:none;
 }
 
+.dropDown-menu-li{
+	font-size: 14px;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom:1px solid #eee;
+}

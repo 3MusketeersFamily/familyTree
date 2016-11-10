@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
   
   
 @Controller  
-@RequestMapping("index")  
+@RequestMapping("login")  
 public class LoginController {  
 	private static final Logger logger = LogManager.getLogger(LoginController.class);
 	
@@ -21,4 +21,13 @@ public class LoginController {
         return "index";  
     }
     
+    @RequestMapping("toLogin")  
+    public String toLogin(HttpServletRequest request,Model model){
+        return "login";  
+    }
+    
+    @RequestMapping("signup")  
+    public String signup(HttpServletRequest request,Model model){
+        return "signup";  
+    }
 }
