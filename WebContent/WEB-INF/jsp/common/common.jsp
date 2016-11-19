@@ -25,6 +25,10 @@
 
 <link href="${basePath}lib/h-ui/css/H-ui.min.css" rel="stylesheet" type="text/css">
 <link href="${basePath}css/common/common.css" rel="stylesheet" type="text/css">
+<%-- <link href="${basePath}lib/jquery.combo.select/combo.select.css" rel="stylesheet" type="text/css"> --%>
 
 <script src="${basePath}lib/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 <script src="${basePath}lib/h-ui/js/H-ui.js" type="text/javascript"></script>
+<script type="text/javascript" src="${basePath}lib/bootstrap-modal/2.2.4/bootstrap-modalmanager.js"></script> 
+<script type="text/javascript" src="${basePath}lib/bootstrap-modal/2.2.4/bootstrap-modal.js"></script> 
+<%-- <script type="text/javascript" src="${basePath}lib/jquery.combo.select/jquery.combo.select.js"></script> --%>

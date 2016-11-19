@@ -12,7 +12,8 @@
     		<li class="header_menu_item"><a class="header_menu_link" href="${path}/login/index.do">首页</a></li>
     		<li class="header_menu_item"><a class="header_menu_link">乐家</a></li>
     		<li class="header_menu_item"><a class="header_menu_link" href="${path}/familyHall/searchFamily.do">家族搜</a></li>
-    		<li class="header_menu_item"><a class="header_menu_link header_menu_item_br">创建家谱</a></li>
+    		<li class="header_menu_item">  
+    		<a class="header_menu_link header_menu_item_br" href="${path}/familyManagement/family.do">家谱</a></li>
     		<li class="header_menu_item dropDown dropDown_hover">
     			<a class="dropDown_A header_menu_link header_menu_item_login" href="${path}/login/toLogin.do">登录</a>
     			<div class="dropDown-menu box-shadow">
@@ -28,4 +29,5 @@
     		</li>
     	</ul>
     </div>
+    
 </div>
