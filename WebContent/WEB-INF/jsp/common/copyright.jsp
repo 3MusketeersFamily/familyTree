@@ -10,6 +10,6 @@
 			<span class="pipe">|</span>
 			<a href="#" target="_blank">用户建议</a>
 		</nav>
-		<p>Copyright ©2016 www.chuanjiabu.com All Rights Reserved.
+		<p>Copyright ©2016 www.chuanjiabu.com All Rights Reserved.</p>
 	</div>
 </footer>

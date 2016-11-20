@@ -5,7 +5,6 @@
 <head>
 	<c:import url="../common/common.jsp"/>
 	<title>传家簿</title>
-	<link href="${basePath}lib/My97DatePicker/skin/default/datepicker.css" rel="stylesheet" type="text/css">
 	<script src="${basePath}lib/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
 </head>
 

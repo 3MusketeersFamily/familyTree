@@ -94,20 +94,6 @@
 				<div class="col-xs-5"> </div>
 			</div>
 			<div class="row cl">
-				<label class="form-label col-xs-2">身高：</label>
-				<div class="formControls col-xs-5">
-					<input type="text" class="input-text" placeholder="" datatype="e" nullmsg="">
-				</div>
-				<div class="col-xs-5"> </div>
-			</div>
-			<div class="row cl">
-				<label class="form-label col-xs-2">身高：</label>
-				<div class="formControls col-xs-5">
-					<input type="text" class="input-text" placeholder="" datatype="e" nullmsg="">
-				</div>
-				<div class="col-xs-5"> </div>
-			</div>
-			<div class="row cl">
 				<label class="form-label col-xs-2">血型：</label>
 				<div class="formControls col-xs-5">
 					<span class="select-box inline" style="padding-bottom:2px;padding-top:2px;">

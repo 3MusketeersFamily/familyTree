@@ -18,7 +18,9 @@ public class FamilyHallController {
 	 */
     @RequestMapping("searchFamily")  
     public String searchFamily(){
-    	return "familyHall/searchFamily";  
+    	return "familyHall/searchFamily";
     }
+    
+    
 
 }

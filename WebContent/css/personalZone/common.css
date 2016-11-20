@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* .body{
+	background:url(../../images/personalZone/body_bg.jpg) no-repeat;
+	overflow-y:visible;
+	background-size:100% 100%;
+} */
+
+.pz_header{
+	width:100%;
+	height:60px;
+	background:url(../../images/personalZone/header_bg.jpeg) no-repeat;
+	background-size:100% 100%;
+}
+
+.pz_contain{
+	background:rgba(13, 121, 141, 0.15);
+}
+
+.pz_c_left{
+	float:left;
+	width:200px;
+	min-height:600px;
+}
+
+.post{
+	float: right;
+    height: 30px;
+    width: 69px;
+    background: #ffc09f;
+    border-radius: 2px;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: #FFF;
+    font-size: 15px;
+    font-family: Arial,Microsoft YaHei;
+    font-weight: bold;
+}
+
+.dynamics{
+	background: #fff;
+	overflow:hidden;
+	margin-bottom: 10px;
+}
+
+.headIcon{
+    float: left;
+    width: 100px;
+}
+
+.headIcon img{
+    display: block;
+    width: 75px;
+	width: 70px;
+    margin: 10px;
+}
+
+.dynamics_cont{
+	margin-left:100px;
+}
+
+.dynamics_cont span{
+	display:block;
+	margin-top: 10px;
+	font-size: 15px;
+    font-weight: bold;
+}
+
+.dynamics_cont span{
+	display:block;
+	font-size: 15px;
+    font-weight: bold;
+	font-size: 14px;
+}
+
+.dynamics_cont p{
+	font-size: 14px;
+	padding:0px 10px 0px 0px;
+}
+	
+
+.pz_c_left .pz_c_title{
+	margin-top:20px;
+	margin-left:40px;
+	color:#fff;
+	font-size:16px;
+}
+
+.pz_c_left .pz_c_title li{
+	padding:5px 0;
+}
+
+
+.pz_c_center{
+	margin:0 325px 0 210px;
+	min-height:600px;
+}
+
+.pz_c_center .shuoshuo{
+	background: #FFF;
+}
+
+.pz_c_right{
+	float:right;
+	margin-right:15px;
+	width:300px;
+	min-height:600px;
+}
+
+
