@@ -1,16 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page import="com.familyTree.entity.FamilyBook"%>
+
 <!doctype html>
 <html>
 <head>
 	<c:import url="../common/common.jsp"/>
 	<title>传家簿</title>
 	<link href="${basePath}css/familyHall/searchFamily.css" rel="stylesheet" type="text/css">
+	<link href="${basePath}css/myComboSelectH-ui/comboSelect.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="${basePath}js/myComboSelectH-ui/comboSelect.js"></script> 
 	<script type="text/javascript" src="${basePath}js/familyManagement/createFamily.js"></script> 
-</head>
+	
 <script type="text/javascript">
 	var path="${path}";
+
 </script>
+</head>
 <body>
 <!--标题栏 begin-->
 <c:import url="../common/header.jsp"/>
@@ -23,14 +29,15 @@
 				<div class="row cl">
 					<label class="form-label col-xs-2" style="margin-top:5px">家族姓氏：</label>
 					<div class="formControls col-xs-5">
-						<span class="select-box">
-							<select id="firstName" class="select" size="1" nullmsg="请选择所在城市！" datatype="*">
-								<option value="" selected>请选择姓氏</option>
-								<option value="1">张</option>
-								<option value="2">李</option>
-								<option value="3">赵</option>
+						<!-- <input id="firstName" type="text" class="input-text" placeholder="可中文查找，拼音模糊查找姓氏" nullmsg="家族姓氏不能为空" datatype="*"> -->
+						<!-- <span class="select-box"> -->
+							<select id="firstName" size="1" nullmsg="请选择所在城市！" datatype="*" z-index="-1" >
+								<option value="">请选择姓氏</option>
+								 <c:forEach items="${familyBook}" var="z" varStatus="s">
+									<option value="${z.name}" filterV="${z.name}${z.nameEn}">${z.name}</option>
+							 	 </c:forEach>
 							</select>
-						</span>
+						<!-- </span> -->
 					</div>
 					<div class="col-xs-5">
 						<span class="Validform_checktip"></span>
@@ -63,7 +70,7 @@
 					<label class="form-label col-xs-2">权限：</label>
 					<div class="formControls skin-minimal col-xs-5 text-l">
 						<div class="radio-box">
-							<input type="radio" id="power-1" name="sex" value="1" datatype="*" selected>
+							<input type="radio" id="power-1" name="sex" value="1" datatype="*" selected >
 							<label for="power-1">公开</label>
 						</div>
 						<div class="radio-box">
