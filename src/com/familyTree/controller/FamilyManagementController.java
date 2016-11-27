@@ -7,8 +7,10 @@ import java.util.Map;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import javax.servlet.http.HttpServletResponse;
 
 
+import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -50,15 +52,15 @@ public class FamilyManagementController {
 	 * 家谱名称验证
 	 * @return
 	 */
+    @ResponseBody
     @RequestMapping("checkFamilyName")  
-    public Map<String, Object> checkFamilyName(HttpServletRequest request,Model model){
+    public String checkFamilyName(HttpServletRequest request,HttpServletResponse response, Model model){
     	Map<String, Object> result = new HashMap<String, Object>();
     	String name = request.getParameter("name").toString();
     	if(commonService.checkFamilyName(name)){
     	} else {
     		result.put("error", "家谱名称已存在！");
     	}
-    	
-    	return result;
+    	return "家谱名称已存在！";
 	}
 }

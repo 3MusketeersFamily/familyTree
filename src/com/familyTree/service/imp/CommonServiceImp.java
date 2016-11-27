@@ -23,7 +23,7 @@ public class CommonServiceImp implements CommonService {
 
 	@Override
 	public Boolean checkFamilyName(String name) {
-		int reslutNum = commonDao.checkFamilyName();
+		int reslutNum = commonDao.checkFamilyName(name);
 		if (reslutNum > 0) {
 			return false;
 		}

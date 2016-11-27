@@ -19,5 +19,8 @@
             <AppenderRef ref="Console"/>
             <AppenderRef ref="RollingFile"/>
         </Root>
+        <logger name="com.familyTree.dao" level="debug" additivity="false">
+			<Appender-Ref ref="Console" />
+		</logger>
     </Loggers>
 </Configuration>

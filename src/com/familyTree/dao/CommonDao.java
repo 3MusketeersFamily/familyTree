@@ -8,5 +8,5 @@ import com.familyTree.entity.FamilyBook;
 public interface CommonDao {
 	public List<FamilyBook> getFamilyBook();
 
-	public int checkFamilyName();
+	public int checkFamilyName(String name);
 }
