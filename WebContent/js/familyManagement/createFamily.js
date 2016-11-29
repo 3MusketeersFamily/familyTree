@@ -27,7 +27,7 @@ $(function() {
 					valid.addClass("Validform_right");
 					valid.text("");
 				}
-			});
+			},"JSON");
 		}
 	});
 	$('#back').click(function() {

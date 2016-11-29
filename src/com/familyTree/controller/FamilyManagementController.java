@@ -52,15 +52,15 @@ public class FamilyManagementController {
 	 * 家谱名称验证
 	 * @return
 	 */
-    @ResponseBody
+    
     @RequestMapping("checkFamilyName")  
-    public String checkFamilyName(HttpServletRequest request,HttpServletResponse response, Model model){
+    public @ResponseBody Map checkFamilyName(HttpServletRequest request,HttpServletResponse response, Model model){
     	Map<String, Object> result = new HashMap<String, Object>();
     	String name = request.getParameter("name").toString();
     	if(commonService.checkFamilyName(name)){
     	} else {
     		result.put("error", "家谱名称已存在！");
     	}
-    	return "家谱名称已存在！";
+    	return result;
 	}
 }
